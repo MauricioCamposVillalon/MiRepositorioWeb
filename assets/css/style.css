@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Noto+Color+Emoji&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+ /*   background-color: #fff9e9;*/
+ background-color: #B3DEE5;
+
+}
+
+.justificar {
+    text-align: justify;
+    margin-left: 3px;
+
+}
+
+
+.bg-navegacion {
+    /*  background-color: #5a8100;*/
+    background-color: #31525b;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: large;
+    transition: all 0.5s ease;
+    opacity: 0.6;
+
+}
+
+.bg-footer1{
+     background-color: #31525b;
+     color: #ffa101;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: large;
+}
+
+.bg-color2 {
+    background-color: #31525b;
+    /*  background-color: #ff6c02; */
+    font-family: Lato;
+    font-weight: 500;
+    font-size: large;
+    transition: all 0.5s ease;
+    /*    opacity: 0.5; */
+
+}
+
+/* Datos para imagen de inicio*/
+
+.tam-carr {
+    max-width: 100%;
+    max-height: 25%;
+    min-width: 100%;
+}
+
+.texto1 {
+    position: absolute;
+    top: 22%;
+    left: 20%;
+    font-family: "Allerta Stencil", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7vw;
+    animation: movimiento 10s ease infinite;
+    text-shadow:
+        1px 1px 0 #f31b1b,
+        -2px 2px 0 #000,
+        -1px 1px 0 #000;
+
+}
+
+
+.texto2 {
+    text-align: justify;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+  /*  font-size: xx-large;*/
+
+}
+
+
+
+
+.texto3 {
+    position: absolute;
+    top: 92%;
+    right: 5%;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    animation: movimiento 10s ease infinite;
+    text-shadow:
+        1px 1px 0 #f31b1b,
+        -2px 2px 0 #000,
+        -1px 1px 0 #000;
+}
+
+
+.texto4{
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    animation: movimiento 10s ease infinite;
+    text-shadow:
+    1px 1px 0 #f31b1b,
+    -2px 2px 0 #000,
+    -1px 1px 0 #000;
+}
+
+.oculta-div{
+    display:block;
+}
+
+.oculta-div2{
+    display:none;
+}
+
+
+@keyframes movimiento {
+    0% {
+        color: #EFEFFB;
+    }
+
+    20% {
+        color: #E0E0F8;
+    }
+
+    40% {
+        color: #A9A9F5;
+    }
+
+    60% {
+        color: #A9A9F5;
+    }
+
+    80% {
+        color: #E0E0F8;
+    }
+
+    100% {
+        color: #EFEFFB;
+    }
+
+
+}
+
+/* fin de CSS esclusivos imagen de inicio*/
+
+
+.bg-interno {
+    background-color: #ff6c02;
+}
+
+.text-aliblue {
+    color: aliceblue;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.altura-container {
+    min-height: 80vh;
+    /* altura de los section */
+}
+
+.altura-container2 {
+    min-height: 100vh;
+    /* altura de los section */
+}
+
+.sinnada {
+    margin: 0%;
+    padding: 0%;
+}
+
+.snmarg {
+    margin: 0%;
+}
+
+.ico-tam {
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    background-color: black;
+
+}
+
+.alig-Center {
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+
+.alig-fin {
+    text-align: end;
+    position: relative;
+}
+
+.img-circular {
+    border-radius: 10%;
+
+}
+
+.circle {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    shape-outside: circle();
+    clip-path: circle();
+    background: lightblue;
+}
+
+.cajaPrincipal {
+    position: relative;
+    display: inline-block;
+}
+
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+* {
+    user-select: none;
+}
+
+*::selection {
+    background: none;
+}
+
+*::-moz-selection {
+    background: none;
+}
+
+
+/* Aqui comienzan las medidas CSS */
+
+@media(max-width:600px) {
+    .oculta-div{
+        display:none;
+    }
+    .oculta-div2{
+        display:block;
+    }
+}
+
