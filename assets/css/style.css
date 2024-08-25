@@ -2,12 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Matemasie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Matemasie&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Noto+Color+Emoji&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Color+Emoji&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 body {
- /*   background-color: #fff9e9;*/
- background-color: #B3DEE5;
+    /*   background-color: #fff9e9;*/
+    background-color: #B3DEE5;
 
 }
 
@@ -26,15 +25,22 @@ body {
     font-size: large;
     transition: all 0.5s ease;
     opacity: 0.6;
-
 }
 
-.bg-footer1{
-     background-color: #31525b;
-     color: #ffa101;
+.bg-footer1 {
+    background-color: #31525b;
+    color: #ffa101;
     font-family: Lato;
     font-weight: 500;
     font-size: large;
+}
+
+.alt-footer {
+    width: 100%;
+    height: 15vh;
+    
+    padding: 16px 0 32px 0;
+    
 }
 
 .bg-color2 {
@@ -76,9 +82,11 @@ body {
 .texto2 {
     text-align: justify;
     font-family: "Rubik", sans-serif;
-    font-style: normal;
+    font-style:normal;
+    font-weight: 600;
     font-optical-sizing: auto;
-  /*  font-size: xx-large;*/
+    font-size: 1.4rem;
+    color: #31525b;
 
 }
 
@@ -101,61 +109,39 @@ body {
 }
 
 
-.texto4{
+.texto4 {
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1vw;
     animation: movimiento 10s ease infinite;
     text-shadow:
-    1px 1px 0 #f31b1b,
-    -2px 2px 0 #000,
-    -1px 1px 0 #000;
+        1px 1px 0 #f31b1b,
+        -2px 2px 0 #000,
+        -1px 1px 0 #000;
 }
 
-.oculta-div{
-    display:block;
+.oculta-div {
+    display: block;
 }
 
-.oculta-div2{
-    display:none;
+.oculta-div2 {
+    display: none;
 }
 
 
-@keyframes movimiento {
-    0% {
-        color: #EFEFFB;
-    }
 
-    20% {
-        color: #E0E0F8;
-    }
-
-    40% {
-        color: #A9A9F5;
-    }
-
-    60% {
-        color: #A9A9F5;
-    }
-
-    80% {
-        color: #E0E0F8;
-    }
-
-    100% {
-        color: #EFEFFB;
-    }
-
-
-}
 
 /* fin de CSS esclusivos imagen de inicio*/
 
 
-.bg-interno {
-    background-color: #ff6c02;
+
+
+.bg-inter {
+    background-color: #B3DEE5;
+    border-radius: 1%;
 }
+
 
 .text-aliblue {
     color: aliceblue;
@@ -164,7 +150,7 @@ body {
 }
 
 .altura-container {
-    min-height: 80vh;
+    min-height: 60vh;
     /* altura de los section */
 }
 
@@ -222,13 +208,12 @@ body {
     display: inline-block;
 }
 
-.matemasie-regular {
-    font-family: "Matemasie", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+
+
+.color-icon{
+    color: #FFA101;
 }
-
-
 
 * {
     user-select: none;
@@ -246,11 +231,116 @@ body {
 /* Aqui comienzan las medidas CSS */
 
 @media(max-width:600px) {
-    .oculta-div{
-        display:none;
+    .oculta-div {
+        display: none;
     }
-    .oculta-div2{
-        display:block;
+
+    .oculta-div2 {
+        display: block;
+    }
+    .texto2{
+        font-family: "Crimson Text", serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align:justify;
+        
+    }
+    .bg-exter {
+        background-color: #FFA101;
+    }
+    
+    .bg-inter {
+        background-color: #fae6b1;
+        border-radius: 2%;
+        
+    }
+    .color-icon{
+        color: #B3DEE5;
+    }
+    
+    .alt-footer {
+        width: 100%;
+        height: 20vh;
+        
+        
+        
+    }
+    
+}
+
+
+
+
+@media(max-width:200px) {
+    .oculta-div {
+        display: none;
+    }
+
+    .oculta-div2 {
+        display: block;
+    }
+    .texto2{
+        font-family: "Crimson Text", serif;
+        font-size: 0.5rem;
+        font-weight: 200;
+        text-align: left;
+        margin: 0%;
     }
 }
 
+
+@keyframes movimiento {
+    0% {
+        color: #EFEFFB;
+    }
+
+    20% {
+        color: #E0E0F8;
+    }
+
+    40% {
+        color: #A9A9F5;
+    }
+
+    60% {
+        color: #A9A9F5;
+    }
+
+    80% {
+        color: #E0E0F8;
+    }
+
+    100% {
+        color: #EFEFFB;
+    }
+
+
+}
+
+@keyframes movimiento2 {
+    0% {
+        color: #0808c1;
+    }
+
+    20% {
+        color: #010116;
+    }
+
+    40% {
+        color: #010114;
+    }
+
+    60% {
+        color: #de7308;
+    }
+
+    80% {
+        color: #e75b15;
+    }
+
+    100% {
+        color: #0f0fdf;
+    }
+
+
+}

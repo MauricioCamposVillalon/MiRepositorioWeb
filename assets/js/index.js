@@ -1,5 +1,7 @@
-$(window).scroll(function () {
-    if ($("#menu").offset().top > 300) {
+
+{
+    $(window).scroll(function () {
+    if ($("#menu").offset().top > 200) {
         $("#menu").addClass("bg-color2");
         $("#menu").removeClass("bg-navegacion");
     } else {
@@ -23,4 +25,4 @@ function validar(evt) {
 
 }
 
-
+}
