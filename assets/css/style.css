@@ -139,6 +139,12 @@ body {
     /*<i class="fab fa-node-js"></i>*/
 }
 
+.color-icoBosstrap{
+    background-color:#FAFAFA;
+    color:#4000FF;
+    /*<i class="fa-brands fa-bootstrap"></i>*/
+}
+
 
 .ico-tam {
     width: 100px;
