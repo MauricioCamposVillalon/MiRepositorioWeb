@@ -29,13 +29,13 @@
                 <div class="collapse navbar-collapse" id="contenidosoportebarra">
                     <ul class="navbar-nav ms-auto   ">
                         <li class="nav-item">
-                            <a class="nav-link text-aliblue" href="index.html">Inicio</a>
+                            <a class="nav-link text-aliblue" aria-disabled="true">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-aliblue" href="about.html">Quien Soy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-aliblue" aria-disabled="true">Trabajos</a>
+                            <a class="nav-link text-aliblue" href="project.html">Trabajos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-aliblue" aria-disabled="true" data-bs-toggle="modal"
@@ -46,37 +46,7 @@
             </div>
         </nav>
         <div class="modal fade" id="modalcontacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese Datos de Contacto</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid    border img-circular">
-                            <!-- Aqui comienza el Formulario-->
-                            <form class="row g-3 p-4" id="formulario1">
-                                <div class="col-md-12 mt-1">
-                                    <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombre">
-                                </div>
-                                <div class="col-md-12">
-                                    <label class="form-label">Correo</label>
-                                    <input type="email" class="form-control" id="mail" placeholder="Ingrese su correo">
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="inputAddress" class="form-label">Telefono</label>
-                                    <input type="text" class="form-control" id="telefono" placeholder="+56-">
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-primary">enviar</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
         </div>
     </header>
     <main>
@@ -85,7 +55,7 @@
             <div class="alig-Center">
                 <img src="assets/img/Imagen2.jpg" class=" tam-carr " alt="...">
                 <div class="texto1 oculta-div">Bienvenidos</div>
-                <div class="texto3 oculta-div">Imagen de <a class="texto4"
+                <div class="texto3 ">Imagen de <a class="texto4"
                         href="https://pixabay.com/es/users/lukasbieri-4664461/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2838921">Lukas
                         Bieri</a> en <a class="texto4"
                         href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2838921">Pixabay</a>
@@ -110,7 +80,8 @@
                         </div>
                         <br>
                         Este aplicativo tiene como finalidad poder presentarme ante ustedes de forma profesional por
-                        medio de los diferentes proyectos en los cuales he desarrollado, como de manera personal.<br><br>
+                        medio de los diferentes proyectos en los cuales he desarrollado, como de manera
+                        personal.<br><br>
                         En caso que mi perfil y mis conocimientos sean compatibles con lo que buscan pueden contactarme
                         por medio de un formulario, el cual responderé a la brevedad o bien también lo pueden realizar a
                         través de LinkedIn.
@@ -124,26 +95,31 @@
     </main>
     <footer class=" bg-footer1 alt-footer "> <!--Carga de color de fondo y margen superior en el footer-->
         <br>
-        <div class="row bg-footer1 ">
-            
-            <div class="col-12 col-md-6 text-center  mt-4">
-                <p class="text-white ">Contactos</p>
-            </div>
-            <div class="col-12 col-md-6 text-center  mt-1"> <!-- ingreso de favicons de footer-->
+        <div class="row col-12 bg-footer1 ">
 
-                <i class="fa-brands fa-github fa-2x m-1 color-icon"></i>
-                <i class="fa-brands fa-linkedin fa-2x m-1 color-icon"> </i>
-                <i class="fa-brands fa-facebook fa-2x m-1 color-icon"> </i>
-                <a class="color-icon" href="mailto:thoyferr@gmail.com"><i class="fa-solid fa-paper-plane fa-2x m-1"></i></a>
-                <br>
+            <div class="col-1 col-md-2 text-center  mt-4">
+
             </div>
-            
-            
-        </div>
-        
-        <div class="col-12 bg-footer1 text-center text-white mt-3"">
-                @ 2024 Todos los derechos reservados
-        </div>
+            <div class="col-10 col-md-8 text-center  mt-1"> <!-- ingreso de favicons de footer-->
+                <a name="git" class="color-icon" href="" id="git">
+                    <i class="fa-brands fa-github fa-2x m-1 color-icon"></i>
+                </a>
+                <a id="lkldn" href="">
+                    <i class="fa-brands fa-linkedin fa-2x m-1 color-icon"> </i>
+                </a>
+
+                <i class="fa-brands fa-facebook fa-2x m-1 color-icon"> </i>
+                <a id="correo" class="color-icon" href=""><i class="fa-solid fa-paper-plane fa-2x m-1"></i></a>
+                <br>
+                <div class="col-12 bg-footer1 text-center text-white mt-3"">
+                    @ 2024 Todos los derechos reservados
+            </div>
+            </div>
+            <div class=" col-1 col-md-2 text-center mt-4">
+
+                </div>
+            </div>
+
     </footer>
 
 
@@ -160,6 +136,14 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
     <script>
+        $(document).ready(function () {
+            $('input#telefono')
+                .keypress(function (event) {
+                    if (event.which < 48 || event.which > 57 || this.value.length === 9) {
+                        return false;
+                    }
+                });
+        });
 
     </script>
 </body>

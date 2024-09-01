@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Jersey+10&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Matemasie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Color+Emoji&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
@@ -110,6 +110,36 @@ body {
     color: #FFA101;
 }
 
+.col-error{
+    background-color: #e75b15;
+    color:#EFEFFB;
+    font-family: "Jersey 10", sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.color-icoJS{
+    background-color:#000;
+    color: yellow;
+}
+
+.color-icoHTML{
+    background-color:#000;
+    color: rgb(251, 6, 6);
+}
+
+.color-icoCss{
+    background-color:#FFF;
+    color: rgb(40, 11, 228);
+}
+
+.color-icoNodejs{
+    background-color:#31B404;
+    color:#FAFAFA;
+    /*<i class="fab fa-node-js"></i>*/
+}
+
+
 .ico-tam {
     width: 100px;
     height: 100px;
@@ -118,14 +148,10 @@ body {
 
 }
 
-
-
 .img-circular {
     border-radius: 10%;
 
 }
-
-
 
 
 .justificar {
@@ -222,6 +248,35 @@ body {
         -1px 1px 0 #000;
 }
 
+.texto5 {
+    text-align: justify;
+    font-family: "Crimson Text", serif;
+    font-style:normal;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-size: 1.3rem;
+    color: #31525b;
+
+}
+
+
+.bg-subheadProy{
+    background-color: #FFA101 /*#31525B*/;
+    color: #fff/* #FFA101*/;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.bg-subBodyProy{
+    background-color:#fae6b1;
+    color: #31525B;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+  font-style: normal;
+}
 
 
 
@@ -278,7 +333,47 @@ body {
         background: lightblue;
         clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     }
+    .texto4 {
+        
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size:  0.5em;
+        color: #E0E0F8;
+    }
     
+    .texto3 {
+        position: absolute;
+        top: 70%;
+        right: 10%;
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 0.5em;
+       
+    }
+    .texto5 {
+        text-align: justify;
+        font-family: "Crimson Text", serif;
+        font-style:normal;
+        font-weight: 500;
+        font-optical-sizing: auto;
+        font-size: 1.1rem;
+        color: #31525b;
+    
+    }
+
+    .bg-subBodyProy{
+        background-color:#B3DEE5;
+    }
+    
+    .bg-subheadProy{
+        background-color:#FFA101;
+        color: #fff;
+        
+    
+    }
+
 }
 
 

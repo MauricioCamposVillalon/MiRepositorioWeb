@@ -17,6 +17,8 @@
 </head>
 
 <body>
+
+
     <header><!-- Aquip comienza la barra de navegacion de la Web-->
 
         <nav id="menu" class="navbar navbar-expand-lg bg-navegacion fixed-top ">
@@ -32,10 +34,10 @@
                             <a class="nav-link text-aliblue" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-aliblue" href="about.html">Quien Soy</a>
+                            <a class="nav-link text-aliblue" aria-disabled="true">Quien Soy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-aliblue" aria-disabled="true">Trabajos</a>
+                            <a class="nav-link text-aliblue" href="project.html">Trabajos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-aliblue" aria-disabled="true" data-bs-toggle="modal"
@@ -46,125 +48,91 @@
             </div>
         </nav>
         <div class="modal fade" id="modalcontacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese Datos de Contacto</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid    border img-circular">
-                            <!-- Aqui comienza el Formulario-->
-                            <form class="row g-3 p-4" id="formulario1">
-                                <div class="col-md-12 mt-1">
-                                    <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombre">
-                                </div>
-                                <div class="col-md-12">
-                                    <label class="form-label">Correo</label>
-                                    <input type="email" class="form-control" id="mail" placeholder="Ingrese su correo">
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="inputAddress" class="form-label">Telefono</label>
-                                    <input type="text" class="form-control" id="telefono" placeholder="+56-">
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-primary">enviar</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+
         </div>
     </header>
+
     <main>
-        <!-- Aqui comienza el cuerpo de la pagina-->
-       
-         
 
-        <!-- Comienzo de cuadros de los proyectos-->
-        <section class="altura-container2 mt-3  " id="parte2">
 
-            <div class="container-fluid pt-5 text-center alig-Center  p-2">
-                <div class="row col-12">
-                    <div class="col-1 col-sm-2"></div>
-                    <div class="col-10 col-sm-8 texto2 text-center">
-                        <hr><p>Me presento</p><hr>
-                    </div>
-                    <div class="col-1 col-sm-2"></div>
-                </div>
-                <div class="col-12 alig-Center oculta-div2">
-                    <img src="assets/img/foto personal.jpg" class="circle " alt="...">
-                </div>
-                <div class="row col-12 mt-sm-5 mt-2 border-secondary">
-                    
-                    <div class="col-sm-2 col-1 ">
+
+        <section class="altura-container m-3 p-1 bg-exter" id="parte2">
+
+            <div class="container-fluid  text-center bg-inter ">
+                <div class="row p-5 ">
+
+                    <div class="col-sm-2 col-1"></div>
+                    <div class="col-10 col-sm-8  ">
+                        <hr>
+                        <p class="text-center  texto2">Me presento</p>
+                        <hr>
+
+                        <div class="oculta-div2 text-center">
+
+                            <img src="assets/img/foto personal.jpg" class="circle " alt="...">
+
+                        </div>
+                        <br>
                         
+                        <img src="assets/img/foto personal.jpg" class="circle mt-ml-2 alig-fin oculta-div border border-4" alt="...">
+                        <p class="texto5">
+                            Mi nombre es Mauricio Campos Villalon, soy titulado de técnico analista Programador,
+                            siempre me a gustado aprender cosas nuevas.<br><br>
+                            Soy muy analista y me gusta observar el entorno que me rodea, ya que me gusta crear y buscar
+                            inovaciones en mi entorno.
+                            <br><br>
+                            Profesionalmente cuento con el título superior de Técnico Analista Programador, por lo cual
+                            cuento con los conocimientos bases para poder incorpórame en cualquier área TI de una
+                            compañía, pero mi interés siempre ha sido el desarrollo, por lo cual he realizado cursos y
+                            algunos proyectos en ambientes con JavaScript con y sin nodeJS, Css, HTML5<br><br>
+                            Actualmente estoy cursando un bootcamp, de Full Stack Python, del cual espero poder aplicar
+                            todos los conocimientos en un ambiente laboral.
+                        </p>
+                        <br>
                     </div>
-                    <div class="col-10 col-sm-8 texto2">
-                        <img src="assets/img/foto personal.jpg" class="circle mt-ml-2 alig-fin oculta-div" alt="...">
-                        <p class="justificar">Soy un tecnico profecional, titulado de Analista Programador con
-                            conocimientos en desarrollo de
-                            programación Web en
-                            ambientes con javaScript, nodeJS, Css, HTML5 y PHP (nativo), que además actualmente esta
-                            cursando un
-                            bootcamp de
-                            desarrollo FullStack en Python.<br>
-                            Cuento con experiencia laboral en diferentes tipos de empresas como: bancos, agroindustria,
-                            telecomunicaciones y del rubro automotriz, en donde me e desempeñado en areas desde la
-                            atencion de
-                            clientes como en soporte Tecnico TI.<br>
-                            Mis principales competencias son aprendizaje rápido, capacidad de análisis y resolución en
-                            situaciones
-                            de alta
-                            complejidad, ademas de tener una alta orientacion a la atención de clientes finales como
-                            intermedios.</p>
-    
-    
-                    </div>
-                    <div class="col-2"></div>
-    
+                    <div class="col-sm-2 col-1"></div>
                 </div>
-    
             </div>
         </section>
-       
 
-       
+
 
     </main>
     <footer class=" bg-footer1 alt-footer "> <!--Carga de color de fondo y margen superior en el footer-->
         <br>
-        <div class="row bg-footer1 ">
-            
-            <div class="col-12 col-md-6 text-center  mt-4">
-                <p class="text-white ">Contacto</p>
-            </div>
-            <div class="col-12 col-md-6 text-center  mt-1"> <!-- ingreso de favicons de footer-->
+        <div class="row col-12 bg-footer1 ">
 
-                <i class="fa-brands fa-github fa-2x m-1 color-icon"></i>
-                <i class="fa-brands fa-linkedin fa-2x m-1 color-icon"> </i>
+            <div class="col-1 col-md-2 text-center  mt-4">
+
+            </div>
+            <div class="col-10 col-md-8 text-center  mt-1"> <!-- ingreso de favicons de footer-->
+                <a name="git" class="color-icon" href="" id="git">
+                    <i class="fa-brands fa-github fa-2x m-1 color-icon"></i>
+                </a>
+                <a id="lkldn" href="">
+                    <i class="fa-brands fa-linkedin fa-2x m-1 color-icon"> </i>
+                </a>
+
                 <i class="fa-brands fa-facebook fa-2x m-1 color-icon"> </i>
-                <a class="color-icon" href="mailto:thoyferr@gmail.com"><i class="fa-solid fa-paper-plane fa-2x m-1"></i></a>
+                <a id="correo" class="color-icon" href=""><i class="fa-solid fa-paper-plane fa-2x m-1"></i></a>
                 <br>
+                <div class="col-12 bg-footer1 text-center text-white mt-3"">
+                    @ 2024 Todos los derechos reservados
             </div>
-            
-            
-        </div>
-        
-        <div class="col-12 bg-footer1 text-center text-white mt-3"">
-                @ 2024 Todos los derechos reservados
-        </div>
-    </footer>
+            </div>
+            <div class=" col-1 col-md-2 text-center mt-4">
 
+                </div>
+            </div>
+
+    </footer>
 
     <!---->
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src=" https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -173,11 +141,18 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
     <script>
+        $(document).ready(function () {
+            $('input#telefono')
+                .keypress(function (event) {
+                    if (event.which < 48 || event.which > 57 || this.value.length === 9) {
+                        return false;
+                    }
+                });
+        });
 
     </script>
 </body>
 
-</body>
 
 
 </html>
